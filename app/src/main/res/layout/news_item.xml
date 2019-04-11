@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:translationZ="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="1dp"
+        app:cardCornerRadius="0dp"
+        android:id="@+id/cv"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/mytheme"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:id="@+id/customer_name"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:text="Adithya AN"
+                android:drawablePadding="10dp"
+                tools:ignore="MissingPrefix" />
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:padding="5dp"
+                style="@style/mytheme"
+                android:drawableLeft="@drawable/ic_edit_location_black_24dp"
+                android:layout_below="@id/customer_name"
+                android:id="@+id/vehiclecustomer_name"
+                android:text="From: Kundrathur"
+                />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/drivername2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vehiclecustomer_name"
+                android:drawableLeft="@drawable/ic_edit_location_black_24dp"
+                style="@style/mytheme"
+
+                android:text="To: Iyyapanthangal"
+                android:textSize="17sp"
+                />
+
+            <android.support.v4.widget.Space
+                android:layout_width="30dp"
+                android:layout_height="18dp"
+                android:id="@+id/space"
+                android:layout_below="@+id/drivername2"
+                />
+            <TextView
+
+                android:padding="5dp"
+                android:id="@+id/goods_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/space"
+                android:drawableLeft="@drawable/ic_edit_location_black_24dp"
+                style="@style/mytheme"
+                android:text="Goods Type: Tv and Table"
+                android:textSize="17sp"
+                />
+
+
+            <!--<TextView-->
+                <!--android:padding="5dp"-->
+                <!--android:id="@+id/date2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/mytheme"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_below="@id/drivername2"-->
+                <!--android:text="7/2/18 02:35pm"-->
+                <!--android:textSize="13sp"-->
+                <!--/>-->
+
+            <Button
+                android:background="@color/colorPrimary"
+                android:id="@+id/payment2"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignStart="@+id/drivername2"
+                android:layout_below="@+id/goods_type"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:text="Start Bidding"
+                android:textSize="17dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

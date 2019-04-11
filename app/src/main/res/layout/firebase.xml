@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:paddingBottom="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="7dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+         <TextView
+             android:textStyle="bold"
+             android:drawablePadding="10dp"
+             android:drawableLeft="@drawable/ic_person_black_24dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="20sp"
+             android:text="Name"
+             android:layout_alignParentLeft="true"
+             android:id="@+id/name" />
+
+            <TextView
+                android:drawableLeft="@drawable/ic_rupees"
+                android:drawablePadding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="end"
+                android:layout_alignParentRight="true"
+                android:text="amount"
+                android:id="@+id/Amount" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+</LinearLayout>

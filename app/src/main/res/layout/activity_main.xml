@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <EditText
+        android:hint="From Location"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_edit_location_black_24dp"
+        android:layout_width="match_parent"
+        android:id="@+id/f"
+        android:background="@android:drawable/editbox_background"
+        android:layout_height="40dp" />
+    <EditText
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_edit_location_black_24dp"
+        android:hint="to Location"
+        android:id="@+id/t"
+        android:background="@android:drawable/editbox_background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+
+            />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+    <fragment
+        class="com.here.android.mpa.mapping.MapFragment"
+        android:id="@+id/mapfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="400dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="HEllosdfsfsf"
+        android:textColor="@android:color/black"
+        android:id="@+id/instructiontext"
+        />
+    <TextView
+        android:layout_below="@+id/instructiontext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="sadfasdf"
+        android:id="@+id/estimatedTime"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imgview"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/rightturn"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/naviCtrlButton"
+        android:text="Navigate"
+        android:textAlignment="center"
+        android:background="@color/colorAccent"
+        />
+    </LinearLayout>
+</FrameLayout>

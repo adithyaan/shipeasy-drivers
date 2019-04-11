@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.adithyaan.guide">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="VCxfv5dHl0Dy3KT04y0x" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="2BZJjuyTG0paa5LNkK0qPg" />
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="hcfV31+3z3Oc0E053XUFp+a0myiWwtnI2iKerXyE65PbNhjbNcbUPko7gy9lHdBcLW+r4v83QoiskOKGrK9rzfZaOdidVTyQ6WVrILbZ8cNqIVAVmzktoHrLM4GWTfLddCBUFhhcUyUc5esb+9Spl6+4YPboujGIdd/VlCr4QyjbvwdooBidRT/19NUeYAwr0EiwRMtSA8NnGmd3r2mTozDY1gBc7Lv0/JwmFWraxHUn5It0cueIHvfEo3xGRUQ7Z9G2OORTJHCocCY1MxJrQEvVDMCaAWZ+dgH5tGYZmwN7R40GebkFbWvpD3CWm9t1RRSUYPjkrnLrOA+AtNDXaM0AK+OOcYWyBnUw/b0UKjCbji/XMbdgg4pQ2KSLas/7GvliQqlW7b4fJaXUZD1TvBEVe+4pA3BC/M0HD9tk/VpS8g7ES3m0Ym1lRhTtc6cV6yc5AT7ApZdSekU5BCzhfltwVpvlgaCJ5j/WK6oC1wOtHV+hCuvxWw7xDY0B3xdaV6lGH/U/SsFBElMUg40I/ETS4NTS7i1S7XFpUbK2Wpfncv1IS3UsDA56gtes5ee2ksd3WjaEUsCJn0StHrpcZIazQPxg2PoaJJzxaPHFaReeQ3Rf1gbyEJ9P8gr037L93xwOvTeryHUdijZaU8/RPjmbe+puxjmdI3QMjwjCRXQ=" />
+        <meta-data
+            android:name="INTENT_NAME"
+            android:value="TEST" />
+
+        <service
+            android:name="com.here.android.mpa.service.MapService"
+            android:exported="false"
+            android:label="LABEL">
+            <intent-filter>
+                <action android:name="TEST" />
+            </intent-filter>
+        </service>
+        <service android:name=".ForegroundService" />
+        <service
+            android:name=".FireInstanceService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FireMessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Timeline">
+
+        </activity>
+        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+    </application>
+
+</manifest>
